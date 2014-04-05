@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstTabViewController.h"
+#import "SecondTabViewController.h"
+
 
 @implementation AppDelegate
 
@@ -16,6 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    FirstTabViewController *rootViewController = (FirstTabViewController *)navigationController.topViewController;
+    //FirstTabViewController *rootViewController = (FirstTabViewController *)navigationController.topViewController;
+    
+    //controller.managedObjectContext = self.managedObjectContext;
+//t;
+    
+    
+    NSLog(@"title %@", rootViewController.title);
+    
+      rootViewController.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 

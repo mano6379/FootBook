@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "SecondTabViewController.h"
 @interface SecondTabViewController : UIViewController
-
+@property NSManagedObjectContext* managedObjectContext;
 @end

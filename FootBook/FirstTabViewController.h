@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstTabViewController : UIViewController
-
+@property NSManagedObjectContext* managedObjectContext;
 @end
